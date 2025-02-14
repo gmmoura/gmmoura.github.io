@@ -8,70 +8,248 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
   </style>
   <link rel="stylesheet" href="resources/style.css" />
 </head>
 <body>
 <h2 id="giovane-c.-m.-moura-ph.d.">Giovane C. M. Moura, Ph.D.</h2>
 <p><img src="resources/gio.jpg" id="profile_pic"/></p>
-<div class="line-block">Data Scientist @ <a href="http://sidnlabs.nl/en">SIDN Labs</a><br />
-Research Guest @ <a href="https://tudelft.nl">TU Delft</a> <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/cybersecurityeemcs/people/giovane-moura">Cyber Security</a> group<br />
+<div class="line-block">Data Scientist @ <a
+href="http://sidnlabs.nl/en">SIDN Labs</a><br />
+Assistant Professor @ <a href="https://tudelft.nl">TU Delft</a> <a
+href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/cybersecurityeemcs/people/giovane-moura">Cyber
+Security</a> group<br />
 E-mail: <code>giovane</code> at <code>protonmail .ch</code><br />
-Others: <a href="https://github.com/gmmoura">GitHub</a>, <a href="https://scholar.google.com/citations?user=DuJtdjUAAAAJ">Google Scholar</a>, <a href="https://twitter.com/gio_windwijzer">Twitter</a>, <a href="https://nl.linkedin.com/in/giovane-moura-a3775064">LinkedIn</a></div>
+Others: <a href="https://github.com/gmmoura">GitHub</a>, <a
+href="https://scholar.google.com/citations?user=DuJtdjUAAAAJ">Google
+Scholar</a>, , <a
+href="https://nl.linkedin.com/in/giovane-moura-a3775064">LinkedIn</a></div>
+<p><a href="section1.html">Biography</a> <strong>~</strong> <a
+href="index.html">Recent Publications</a> <strong>~</strong> <a
+href="section2.html">Older Publications</a> <strong>~</strong> <a
+href="section3.html">Talks</a></p>
 <p><br />
-</p>
-<p><a href="section1.html">Biography</a> <strong>~</strong> <a href="index.html">Recent Publications</a> <strong>~</strong> <a href="section2.html">Older Publications</a> <strong>~</strong> <a href="section3.html">Talks</a></p>
-<p><br />
-<strong>Short-bio</strong>: I am a Data Scientist with <a href="https://sidnlabs.nl/en">SIDN Labs</a>, the research arm of <a href="https://sidn.nl">SIDN</a>, the Netherland’s <code>.nl</code> top-level domain operator. My research focus on bringing <em>academic rigor</em> to network <em>operations</em>, to improve performance, security and stability of networked systems. I am also a researcher guest at TU Delft’s <a href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/cybersecurityeemcs/people">CyberSecurity</a> group.</p>
-<h3 id="recent-publications-2016now">Recent publications (2016–now):</h3>
-<h4 id="internet-centralization-and-consolidation">Internet Centralization and Consolidation</h4>
+<strong>Short-bio</strong>: I am a Data Scientist with <a
+href="https://sidnlabs.nl/en">SIDN Labs</a>, the research arm of <a
+href="https://sidn.nl">SIDN</a>, the Netherland’s <code>.nl</code>
+top-level domain operator. . I am also an Assistant Professor at TU
+Delft’s CyberSecurity group My research focus on bringing <em>academic
+rigor</em> to network <em>operations</em>, to improve performance,
+security and stability of networked systems. I am also a researcher
+guest at TU Delft’s <a
+href="https://www.tudelft.nl/en/eemcs/the-faculty/departments/intelligent-systems/cybersecurityeemcs/people">CyberSecurity</a>
+group.</p>
+<h3 id="recent-publications-2016now">Recent publications
+(2016–now):</h3>
+<h4 id="security">Security</h4>
 <ol type="1">
-<li><p>Luciano Zembruzki, Raffaele Sommese, Lisandro Zambenedetti Granville, Arthur Jacobs, Mattijs Jonker, Giovane C. M. Moura. <em>Hosting Industry Centralization and Consolidation</em>. In: In: IEEE/IFIP Network Operations and Management Symposium (<strong>NOMS 2022</strong>) - <a href="https://arxiv.org/pdf/2109.01187.pdf">[PDF]</a></p></li>
-<li><p>Giovane C. M. Moura, Sebastian Castro, Wes Hardaker, Maarten Wullink, Cristian Hesselman. <em>Clouding up the Internet: how centralized is DNS traffic becoming?</em>. Proceedings of the ACM Internet Measurement Conference. Virtual Conference (<strong>IMC2020</strong>), Oct. 2020. <a href="https://dl.acm.org/doi/pdf/10.1145/3419394.3423625">[PDF]</a>, <a href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3419394.3423625&amp;file=imc2020-paper80-long_01.mp4&amp;download=true">IMC2020 Presentation</a>, <a href="https://ripe81.ripe.net/archives/video/419">RIPE81 presentation</a>.</p></li>
+<li><p>Giovane C. M. Moura, Thomas Daniels, Maarten Bosteels, Sebastian
+Castro, Moritz M¨uller, Thymen Wabeke, Thijs van den Hout, Maciej
+Korczynski, and Georgios Smaragdakis. <em>Characterizing and Mitigating
+Phishing Attacks at ccTLD Scale</em>. In Proceedings of the 2024 ACM
+SIGSAC Conference on Computer and Communications Security (<strong>ACM
+CCS ’24</strong>), October 14-18, 2024, Salt Lake City, UT, USA. ACM,
+New York, NY, USA, p. 15. <a
+href="https://dl.acm.org/doi/pdf/10.1145/3658644.3690192">[PDF]</a></p></li>
+<li><p>Giovane C. M. Moura, Marco Davids, Caspar Schutijser, Cristian
+Hesselman, John Heidemann, Georgios Smaragdakis. <em>Deep Dive into NTP
+Pool’s Popularity and Mapping</em>. Venue: Proc. ACM Meas. Anal. Comput.
+Syst. (<strong>ACM SIGMETRICS / IFIP PERFORMANCE 2024</strong>). <a
+href="https://dl.acm.org/doi/pdf/10.1145/3639041">[PDF]</a></p></li>
+<li><p>Giovane C. M. Moura and John Heidemann. <em>Vulnerability
+Disclosure Considered Stressful</em>. In: SIGCOMM Comput. Commun.
+Rev. 53, 2 (<strong>ACM CCR</strong>). April 2023. <a
+href="https://dl.acm.org/doi/pdf/10.1145/3610381.3610383">[PDF]</a></p></li>
+<li><p>Yevheniya Nosyk, Qasim Lone, Yury Zhauniarovich, Carlos H. Gañán,
+Emile Aben, Giovane C. M. Moura, Samaneh Tajalizadehkhoob, Andrzej Duda,
+and Maciej Korczyński. <em>Intercept and Inject: DNS Response
+Manipulation in the Wild</em>. Proceedings of the 2023 Passive and
+Active Measurement Conference (<strong>PAM2023</strong>), Virtual
+Conference, March 2023. <a
+href="https://www.sidnlabs.nl/downloads/4Ud373Ww1AWiQwQzvu9WkW/424f24e56fb7f5bcce3cfbb0cbd94b52/Intercept_and_Inject_DNS_Response_Manipulation_in_the_Wild.pdf">[PDF]</a></p></li>
+<li><p>X. Bouwman, V. Le Pochat, P. Foremski, T. Van Goethem, C. Gañán,
+G. Moura, S. Tajalizadehkhoob, W. Joosen, M. van Eeten: <em>Helping
+hands: Measuring the impact of a large threat intelligence sharing
+community</em>. In: 31st USENIX Security Symposium (<strong>USENIX
+Security 22</strong> - BOSTON, MA, USA). Aug. 10-12, 2022 <a
+href="https://www.usenix.org/system/files/sec22summer_bouwman.pdf">[PDF]</a></p></li>
+<li><p>Thijs van den Hout Thymen Wabeke Giovane C. M. Moura Cristian
+Hesselman: <em>Recognizing Logos for phishing detection and other scams:
+a TLD case study</em> . Proceedings of the 2022 Passive and Active
+Measurement Workshop (<strong>PAM2022</strong>) Online, 2022. . <a
+href="https://www.sidnlabs.nl/download/logomotive-pam-preprint">[PDF]</a></p></li>
+<li><p>Giovane C. M. Moura, Sebastian Castro, John Heidemann and Wes
+Hardaker. <em>TsuNAME: exploiting misconfiguration and vulnerability to
+DDoS DNS</em>. Proceedings of the ACM Internet Measurement Conference
+(<strong>IMC2021</strong>) .Virtual, Nov. 2021. <a
+href="https://www.isi.edu/~johnh/PAPERS/Moura21b.pdf">[PDF]</a></p></li>
+<li><p>Thymen Wabeke, Giovane C. M. Moura, Nanneke Franken and Cristian
+Hesselman. <em>Counterfighting Counterfeit: Detecting and Taking down
+Fraudulent Webshops at a ccTLD</em>. Proceedings of the Passive and
+Active Measurement Workshop. (<strong>PAM2020</strong>) Eugene, OR, USA,
+Mar. 2020. [<a
+href="https://www.sidnlabs.nl/downloads/6tIo0U3dqydRSP781LYgDP/44c1378c5ed5a66d649a1dcfbbf13930/wabeke20a.pdf">PDF</a>]</p></li>
+<li><p>Raffaele Sommese, Giovane C. M. Moura, Mattijs Jonker, Roland van
+Rijswijk-Deij , Alberto Dainotti, KC Claffy, Anna Sperotto. <em>When
+parents and children disagree: Diving into DNS delegation
+inconsistency</em>. Proceedings of the Passive and Active Measurement
+Workshop. (<strong>PAM2020</strong>) Eugene, OR, USA, Mar. 2020. [<a
+href="https://www.sidnlabs.nl/downloads/53BNt9EPxZQOCHYjqWhYfR/7295d79a207afc79cab6309d40a15a76/When_parents_and_children_disagree_Diving_into_DNS_delegation_inconsistency.pdf">PDF</a>]</p></li>
+<li><p>Giovane C. M. Moura, Cristian Hesselman, Gerald Schaapman, Nick
+Boerman, Octavia de Weerdt . <em>Into the DDoS maelstrom: a longitudinal
+study of a scrubbing service</em> . In : 5th International Workshop on
+Traffic Measurements for Cybersecurity (<strong>WTMC 2020</strong>),
+Online Conference. [<a
+href="https://www.sidnlabs.nl/downloads/3TrpeS6fxwc4mhlYLTaRm2/65c446763c3250d3d4be3d74e99e4f3d/Into_the_DDoS_maelstrom_a_longitudinal_study_of_a_scrubbing_service.pdf">PDF</a>]</p></li>
+<li><p>Pawel Foremski, Oliver Gasser, Giovane C. M. Moura. <em>DNS
+Observatory: The Big Picture of the DNS</em> . Proceedings of the ACM
+Internet Measurement Conference (Amsterdam, the Netherlands, Oct. 2019)
+(<strong>ACM IMC2019</strong>). <a
+href="https://www.net.in.tum.de/fileadmin/bibtex/publications/papers/foremski2019dns.pdf">[PDF]</a></p></li>
+<li><p>M. Korczynski, M. Wullink, S. Tajalizadehkhoob, G. C. M. Moura,
+A. Noroozian, D. Bagley, and C. Hesselman, <em>Cybercrime After the
+Sunrise: A Statistical Analysis of DNS Abuse in New gTLDs</em>, ACM Asia
+Conference on Computer &amp; Communications Security 2018 (<strong>ASIA
+CCS ’18</strong>), Incheon, Republic of Korea, June 2018. [<a
+href="https://www.sidnlabs.nl/downloads/gogl-IZCQkidFmzVvw72ug/48cedd55a528b8f8039a5d7a0286fb3c/asiaccs2018-submitted.pdf">PDF</a>]</p></li>
+<li><p>Giovane C. M. Moura, John Heidemann, Moritz Müller, Ricardo de O.
+Schmidt and Marco Davids. When the Dike Breaks: Dissecting DNS Defenses
+During DDoS. Proceedings of the ACM Internet Measurement Conference.
+Boston, MA, USA, Oct. 2018. (<strong>ACM IMC2018</strong>) <a
+href="https://www.isi.edu/~johnh/PAPERS/Moura18b.pdf">[PDF]</a></p></li>
+<li><p>Maarten Aertsen, Maciej Korczynski, Giovane C. M. Moura, Samaneh
+Tajalizadehkhoob, and Jan van den Berg. 2017. No domain left behind: is
+Let’s Encrypt democratizing encryption?. In Proceedings of Applied
+Networking Research Workshop 2017, Prague, Czech Republic, July 15
+(<strong>ANRW‘17</strong>). [<a
+href="https://www.sidnlabs.nl/downloads/WJrPiBC2St6LGuquWsjs7g/fd46108780cfd88aa4bea59ab2bdf6fa/No_domain_left_behind_is_Let_s_Encrypt_democratizing_encryption.pdf">PDF</a>]</p></li>
+<li><p>Giovane C. M. Moura, Moritz Müller, Marco Davids, Maarten
+Wullink, and Cristian Hesselman: Domain names abuse and TLDs: from
+monetization towards mitigation. 3rd IEEE/IFIP Workshop on Security for
+Emerging Distributed Network Technologies (<strong>DISSECT
+2017</strong>), co-located with IFIP/IEEE International Symposium on
+Integrated Network Management (IM 2017). [<a
+href="https://www.sidnlabs.nl/downloads/6X4J7VPYTWeSJ5QEXq_MPQ/a55e06267156e160c78db10bc4817a86/dissect2017.pdf">PDF</a>]</p></li>
+<li><p>Giovane C. M. Moura, Ricardo de O. Schmidt, John Heidemann,
+Wouter B. de Vries, Moritz Müller, Lan Wei and Christian Hesselman.
+<em>Anycast vs. DDoS: Evaluating the November 2015 Root DNS Event</em>.
+Proceedings of the ACM Internet Measurement Conference(<strong>ACM
+IMC2016</strong>) Nov. 2016. [<a
+href="https://www.isi.edu/~johnh/PAPERS/Moura16b.pdf">PDF</a>]</p></li>
 </ol>
 <h4 id="anycast-and-dns-engineering">Anycast and DNS Engineering</h4>
 <ol type="1">
-<li><p>Moura, G., Hardaker, W., Heidemann, J., and M. Davids, “Considerations for Large Authoritative DNS Server Operators”, <a href="https://www.rfc-editor.org/info/rfc9199">RFC 9199</a>, DOI 10.17487/RFC9199, March 2022, <a href="https://www.rfc-editor.org/rfc/rfc9199.txt">[TXT]</a></p></li>
-<li><p>Giovane C. M. Moura, John Heidemann, Wes Hardaker, Jeroen Bulten, João Ceron and Cristian Hesselman. <em>Old but Gold: Prospecting TCP to Engineer DNS Anycast (extended)</em>. Proceedings of the 2022 Passive and Active Measurement Workshop (<strong>PAM2022</strong>). <a href="https://www.isi.edu/~johnh/PAPERS/Moura22a.pdf">[PDF]</a> <span style="color:red">[Best Paper Award] </span></p></li>
-<li><p>Raffaele Sommese, Gautam Akiwate , Mattijs Jonker , Giovane C. M. Moura, Marco Davids, Roland van Rijswijk-Deij , Geoffrey M. Voelker , Stefan Savage , K.C. Claffy, Anna Sperotto. <em>Characterization of Anycast Adoption in the DNS Authoritative Infrastructure</em>. 2021 International Workshop on Traffic and Monitoring Analysis (<strong>TMA 2021</strong>). Online, 2021. <a href="https://www.sidnlabs.nl/downloads/28bZ23ZqkP22Pqgu7e0F2Y/13db3fc1fd4a11499da1ddf3a961de92/Characterization_of_Anycast_Adoption_in_the_DNS_Authoritative_Infrastructure.pdf">[PDF]</a> <span style="color:red">[Best Paper Award] </span></p></li>
-<li><p>Leandro M. Bertholdo; João M. Ceron; Lisandro Z. Granville; Giovane C. M. Moura; Cristian Hesselman; Roland van Rijswijk-Deij. <em>BGP Anycast Tuner: Intuitive Route Management for Anycast Services</em>. In: : 2020 16th International Conference on Network and Service Management (<strong>CNSM 2020</strong>), Online. <a href="https://www.sidnlabs.nl/downloads/2vzDLsXPFX4BdBl0AYMVtL/1e564a50e8d051c5f3998968a2c9b46f/BGP_Anycast_Tuner_Intuitive_Route_Management_for_Anycast_Services.pdf">[PDF]</a></p></li>
-<li><p>Giovane C. M. Moura, John Heidemann, Ricardo de O. Schmidt and Wes Hardaker. <em>Cache Me If You Can: Effects of DNS Time-to-Live</em>. Proceedings of the ACM Internet Measurement Conference. Amsterdam, the Netherlands, Oct. 2019 (<strong>ACM IMC2019</strong>). [<a href="https://www.isi.edu/~johnh/PAPERS/Moura19b.pdf">PDF</a>]</p></li>
-<li><p>Moritz Müller, Giovane C. M. Moura, Ricardo de O. Schmidt and John Heidemann. <em>Recursives in the Wild: Engineering Authoritative DNS Servers</em>. Proceedings of the ACM Internet Measurement Conference. London, UK, 2017, 489–495 (<strong>ACM IMC2017</strong>) [<a href="https://www.isi.edu/~johnh/PAPERS/Mueller17b.pdf">PDF</a>]</p></li>
+<li><p>Moura, G., Hardaker, W., Heidemann, J., and M. Davids,
+“Considerations for Large Authoritative DNS Server Operators”, <a
+href="https://www.rfc-editor.org/info/rfc9199">RFC 9199</a>, DOI
+10.17487/RFC9199, March 2022, <a
+href="https://www.rfc-editor.org/rfc/rfc9199.txt">[TXT]</a></p></li>
+<li><p>Giovane C. M. Moura, John Heidemann, Wes Hardaker, Jeroen Bulten,
+João Ceron and Cristian Hesselman. <em>Old but Gold: Prospecting TCP to
+Engineer DNS Anycast (extended)</em>. Proceedings of the 2022 Passive
+and Active Measurement Workshop (<strong>PAM2022</strong>). <a
+href="https://www.isi.edu/~johnh/PAPERS/Moura22a.pdf">[PDF]</a> <span
+style="color:red">[Best Paper Award] </span></p></li>
+<li><p>Raffaele Sommese, Gautam Akiwate , Mattijs Jonker , Giovane C. M.
+Moura, Marco Davids, Roland van Rijswijk-Deij , Geoffrey M. Voelker ,
+Stefan Savage , K.C. Claffy, Anna Sperotto. <em>Characterization of
+Anycast Adoption in the DNS Authoritative Infrastructure</em>. 2021
+International Workshop on Traffic and Monitoring Analysis (<strong>TMA
+2021</strong>). Online, 2021. <a
+href="https://www.sidnlabs.nl/downloads/28bZ23ZqkP22Pqgu7e0F2Y/13db3fc1fd4a11499da1ddf3a961de92/Characterization_of_Anycast_Adoption_in_the_DNS_Authoritative_Infrastructure.pdf">[PDF]</a>
+<span style="color:red">[Best Paper Award] </span></p></li>
+<li><p>Leandro M. Bertholdo; João M. Ceron; Lisandro Z. Granville;
+Giovane C. M. Moura; Cristian Hesselman; Roland van Rijswijk-Deij.
+<em>BGP Anycast Tuner: Intuitive Route Management for Anycast
+Services</em>. In: : 2020 16th International Conference on Network and
+Service Management (<strong>CNSM 2020</strong>), Online. <a
+href="https://www.sidnlabs.nl/downloads/2vzDLsXPFX4BdBl0AYMVtL/1e564a50e8d051c5f3998968a2c9b46f/BGP_Anycast_Tuner_Intuitive_Route_Management_for_Anycast_Services.pdf">[PDF]</a></p></li>
+<li><p>Giovane C. M. Moura, John Heidemann, Ricardo de O. Schmidt and
+Wes Hardaker. <em>Cache Me If You Can: Effects of DNS Time-to-Live</em>.
+Proceedings of the ACM Internet Measurement Conference. Amsterdam, the
+Netherlands, Oct. 2019 (<strong>ACM IMC2019</strong>). [<a
+href="https://www.isi.edu/~johnh/PAPERS/Moura19b.pdf">PDF</a>]</p></li>
+<li><p>Moritz Müller, Giovane C. M. Moura, Ricardo de O. Schmidt and
+John Heidemann. <em>Recursives in the Wild: Engineering Authoritative
+DNS Servers</em>. Proceedings of the ACM Internet Measurement
+Conference. London, UK, 2017, 489–495 (<strong>ACM IMC2017</strong>) [<a
+href="https://www.isi.edu/~johnh/PAPERS/Mueller17b.pdf">PDF</a>]</p></li>
 </ol>
-<h4 id="denial-of-service-attacks-ddos">Denial of Service Attacks (DDoS)</h4>
+<h4 id="internet-centralization-and-consolidation">Internet
+Centralization and Consolidation</h4>
 <ol type="1">
-<li><p>Giovane C. M. Moura, Sebastian Castro, John Heidemann and Wes Hardaker. <em>TsuNAME: exploiting misconfiguration and vulnerability to DDoS DNS</em>. Proceedings of the ACM Internet Measurement Conference (<strong>IMC2021</strong>) .Virtual, Nov. 2021. <a href="https://www.isi.edu/~johnh/PAPERS/Moura21b.pdf">[PDF]</a></p></li>
-<li><p>Giovane C. M. Moura, Cristian Hesselman, Gerald Schaapman, Nick Boerman, Octavia de Weerdt . <em>Into the DDoS maelstrom: a longitudinal study of a scrubbing service</em> . In : 5th International Workshop on Traffic Measurements for Cybersecurity (<strong>WTMC 2020</strong>), Online Conference. [<a href="https://www.sidnlabs.nl/downloads/3TrpeS6fxwc4mhlYLTaRm2/65c446763c3250d3d4be3d74e99e4f3d/Into_the_DDoS_maelstrom_a_longitudinal_study_of_a_scrubbing_service.pdf">PDF</a>]</p></li>
-<li><p>Giovane C. M. Moura, John Heidemann, Moritz Müller, Ricardo de O. Schmidt and Marco Davids. When the Dike Breaks: Dissecting DNS Defenses During DDoS. Proceedings of the ACM Internet Measurement Conference. Boston, MA, USA, Oct. 2018. (<strong>ACM IMC2018</strong>) <a href="https://www.isi.edu/~johnh/PAPERS/Moura18b.pdf">[PDF]</a></p></li>
-<li><p>Giovane C. M. Moura, Ricardo de O. Schmidt, John Heidemann, Wouter B. de Vries, Moritz Müller, Lan Wei and Christian Hesselman. <em>Anycast vs. DDoS: Evaluating the November 2015 Root DNS Event</em>. Proceedings of the ACM Internet Measurement Conference(<strong>ACM IMC2016</strong>) Nov. 2016. [<a href="https://www.isi.edu/~johnh/PAPERS/Moura16b.pdf">PDF</a>]</p></li>
-</ol>
-<h4 id="dns-security-and-zone-contents">DNS Security and Zone Contents</h4>
-<ol type="1">
-<li><p>X. Bouwman, V. Le Pochat, P. Foremski, T. Van Goethem, C. Gañán, G. Moura, S. Tajalizadehkhoob, W. Joosen, M. van Eeten: _ Helping hands: Measuring the impact of a large threat intelligence sharing community_. In: 31st USENIX Security Symposium (<strong>USENIX Security 22</strong> - BOSTON, MA, USA). Aug. 10-12, 2022 <a href="https://www.usenix.org/system/files/sec22summer_bouwman.pdf">[PDF]</a></p></li>
-<li><p>Thijs van den Hout Thymen Wabeke Giovane C. M. Moura Cristian Hesselman: <em>Recognizing Logos for phishing detection and other scams: a TLD case study</em> . Proceedings of the 2022 Passive and Active Measurement Workshop (<strong>PAM2022</strong>) Online, 2022. . <a href="https://www.sidnlabs.nl/download/logomotive-pam-preprint">[PDF]</a></p></li>
-<li><p>Thymen Wabeke, Giovane C. M. Moura, Nanneke Franken and Cristian Hesselman . Counterfighting Counterfeit: Detecting and Taking down Fraudulent Webshops at a ccTLD. Proceedings of the Passive and Active Measurement Workshop. (<strong>PAM2020</strong>) Eugene, OR, USA, Mar. 2020. [<a href="https://www.sidnlabs.nl/downloads/6tIo0U3dqydRSP781LYgDP/44c1378c5ed5a66d649a1dcfbbf13930/wabeke20a.pdf">PDF</a>]</p></li>
-<li><p>Raffaele Sommese, Giovane C. M. Moura, Mattijs Jonker, Roland van Rijswijk-Deij , Alberto Dainotti, KC Claffy, Anna Sperotto. <em>When parents and children disagree: Diving into DNS delegation inconsistency</em>. Proceedings of the Passive and Active Measurement Workshop. (<strong>PAM2020</strong>) Eugene, OR, USA, Mar. 2020. [<a href="https://www.sidnlabs.nl/downloads/53BNt9EPxZQOCHYjqWhYfR/7295d79a207afc79cab6309d40a15a76/When_parents_and_children_disagree_Diving_into_DNS_delegation_inconsistency.pdf">PDF</a>]</p></li>
-<li><p>Pawel Foremski, Oliver Gasser, Giovane C. M. Moura. <em>DNS Observatory: The Big Picture of the DNS</em> . Proceedings of the ACM Internet Measurement Conference (Amsterdam, the Netherlands, Oct. 2019) (<strong>ACM IMC2019</strong>). <a href="https://www.net.in.tum.de/fileadmin/bibtex/publications/papers/foremski2019dns.pdf">[PDF]</a></p></li>
-<li><p>M. Korczynski, M. Wullink, S. Tajalizadehkhoob, G. C. M. Moura, A. Noroozian, D. Bagley, and C. Hesselman, <em>Cybercrime After the Sunrise: A Statistical Analysis of DNS Abuse in New gTLDs</em>, ACM Asia Conference on Computer &amp; Communications Security 2018 (<strong>ASIA CCS ’18</strong>), Incheon, Republic of Korea, June 2018. [<a href="https://www.sidnlabs.nl/downloads/gogl-IZCQkidFmzVvw72ug/48cedd55a528b8f8039a5d7a0286fb3c/asiaccs2018-submitted.pdf">PDF</a>]</p></li>
-<li><p>Maarten Aertsen, Maciej Korczynski, Giovane C. M. Moura, Samaneh Tajalizadehkhoob, and Jan van den Berg. 2017. No domain left behind: is Let’s Encrypt democratizing encryption?. In Proceedings of Applied Networking Research Workshop 2017, Prague, Czech Republic, July 15 (<strong>ANRW‘17</strong>). [<a href="https://www.sidnlabs.nl/downloads/WJrPiBC2St6LGuquWsjs7g/fd46108780cfd88aa4bea59ab2bdf6fa/No_domain_left_behind_is_Let_s_Encrypt_democratizing_encryption.pdf">PDF</a>]</p></li>
-<li><p>Giovane C. M. Moura, Moritz Müller, Marco Davids, Maarten Wullink, and Cristian Hesselman: Domain names abuse and TLDs: from monetization towards mitigation. 3rd IEEE/IFIP Workshop on Security for Emerging Distributed Network Technologies (<strong>DISSECT 2017</strong>), co-located with IFIP/IEEE International Symposium on Integrated Network Management (IM 2017). [<a href="https://www.sidnlabs.nl/downloads/6X4J7VPYTWeSJ5QEXq_MPQ/a55e06267156e160c78db10bc4817a86/dissect2017.pdf">PDF</a>]</p></li>
+<li><p>Raffaele Sommese, Mattijs Jonker, Jeroen van der Ham, Giovane C.
+M. Moura: <em>Assessing e-Government DNS Resilience</em> . In: 2022
+International Conference on Network and Service Management (<strong>CNSM
+2022</strong>), Thessaloniki, Greece, Nov. 2022. <a
+href="https://www.sidnlabs.nl/downloads/7K8BQ4ZZKGnwLKqafE2eh3/c2de7e36c7ca7a1525032211bbf2aed9/Assessing_e-Government_DNS_Resilience.pdf">[PDF]</a></p></li>
+<li><p>Luciano Zembruzki, Raffaele Sommese, Lisandro Zambenedetti
+Granville, Arthur Jacobs, Mattijs Jonker, Giovane C. M. Moura.
+<em>Hosting Industry Centralization and Consolidation</em>. In: In:
+IEEE/IFIP Network Operations and Management Symposium (<strong>NOMS
+2022</strong>) - <a
+href="https://arxiv.org/pdf/2109.01187.pdf">[PDF]</a></p></li>
+<li><p>Giovane C. M. Moura, Sebastian Castro, Wes Hardaker, Maarten
+Wullink, Cristian Hesselman. <em>Clouding up the Internet: how
+centralized is DNS traffic becoming?</em>. Proceedings of the ACM
+Internet Measurement Conference. Virtual Conference
+(<strong>IMC2020</strong>), Oct. 2020. <a
+href="https://dl.acm.org/doi/pdf/10.1145/3419394.3423625">[PDF]</a>, <a
+href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3419394.3423625&amp;file=imc2020-paper80-long_01.mp4&amp;download=true">IMC2020
+Presentation</a>, <a
+href="https://ripe81.ripe.net/archives/video/419">RIPE81
+presentation</a>.</p></li>
 </ol>
 <h4 id="systems">Systems</h4>
 <ol type="1">
-<li><p>G. Moura, M. Davids, C. Schutijser and C. Hesselman: <em>Diving into the NTP Pool</em>. In: SIDN Technical Report (Oct. 2021) <a href="https://www.sidnlabs.nl/downloads/5aPx86UtFmvKs6WE3LHwbU/c6acce6a012fe07256bab8caefff54af/Diving_into_the_NTP_Pool.pdf">PDF</a></p></li>
-<li><p>Maarten Wullink, Giovane. C. M. Moura and Cristian Hesselman: <em>DMap: automating domain name ecosystem measurements and applications</em>. In: 2018 International Workshop on Traffic and Monitoring Analysis (<strong>TMA 2018</strong>). Vienna, June 2018. [<a href="https://www.sidnlabs.nl/downloads/0hJo6zFiQr2bCWdT3-w47w/9ddebdad34bba365f163e750dc81e4b1/DMAP-Automating_Comain_Name_Ecosystem_Measurements_and_Applications.pdf">PDF</a>]</p></li>
-<li><p>Cristian Hesselman, Giovane C. M. Moura, Ricardo de O. Schmidt, Cees Toet. <em>Increasing DNS Security and Stability through a Control Plane for Top-level Domain Operators</em>. <strong>IEEE Communications Magazine</strong>, 2017, 55.1: 197-203. [<a href="https://www.sidnlabs.nl/downloads/WSOrrK9bS2uJVBjcA7769g/2115b7e2ef22f6d587a6eed60217fa6a/sidnlabs-commag.pdf">PDF</a>]</p></li>
-<li><p>Maarten Wullink, Giovane. C. M. Moura , Moritz Müller and Cristian Hesselman. <em>ENTRADA: a High-Performance Network Traffic Data Streaming Warehouse</em>. In: IEEE/IFIP Network Operations and Management Symposium (<strong>NOMS 2016</strong>) – Experience Session. Istanbul, Turkey, May 2016. [<a href="https://www.sidnlabs.nl/downloads/0u2KIZFoTIyPbRCS8bUGTg/978b3110b300ab816dcb00babcc854b4/sidn-ecrime.pdf">PDF</a>]</p></li>
-<li><p>Giovane. C. M. Moura , Moritz Müller, Maarten Wullink and Cristian Hesselman. <em>nDEWS: a New Domains Early Warning System for TLDs</em>. In: IEEE/IFIP International Workshop on Analytics for Network and Service Management (<strong>AnNet 2016</strong>), co-located with IEEE/IFIP Network Operations and Management Symposium (NOMS 2016). Istanbul, Turkey, May 2016. [<a href="https://www.sidnlabs.nl/downloads/F9eteKnZTjy99IPD9AQf2g/f4072c9cc67fc3f459b2c78795c38294/sidn-annet2016.pdf">PDF</a>]</p></li>
-<li><p>Maarten Wullink, Moritz Müller, Marco Davids, Giovane C. M. Moura, and Cristian Hesselman. <em>ENTRADA: Enabling DNS Big Data Applications</em>. In: APWG Symposium on Electronic Crime Research (<strong>eCRIME 2016</strong>), Toronto, ON, Canada. June 1–3, 2016. [<a href="https://www.sidnlabs.nl/downloads/0u2KIZFoTIyPbRCS8bUGTg/978b3110b300ab816dcb00babcc854b4/sidn-ecrime.pdf">PDF</a>]</p></li>
+<li><p>G. Moura, M. Davids, C. Schutijser and C. Hesselman: <em>Diving
+into the NTP Pool</em>. In: SIDN Technical Report (Oct. 2021) <a
+href="https://www.sidnlabs.nl/downloads/5aPx86UtFmvKs6WE3LHwbU/c6acce6a012fe07256bab8caefff54af/Diving_into_the_NTP_Pool.pdf">PDF</a></p></li>
+<li><p>Maarten Wullink, Giovane. C. M. Moura and Cristian Hesselman:
+<em>DMap: automating domain name ecosystem measurements and
+applications</em>. In: 2018 International Workshop on Traffic and
+Monitoring Analysis (<strong>TMA 2018</strong>). Vienna, June 2018. [<a
+href="https://www.sidnlabs.nl/downloads/0hJo6zFiQr2bCWdT3-w47w/9ddebdad34bba365f163e750dc81e4b1/DMAP-Automating_Comain_Name_Ecosystem_Measurements_and_Applications.pdf">PDF</a>]</p></li>
+<li><p>Cristian Hesselman, Giovane C. M. Moura, Ricardo de O. Schmidt,
+Cees Toet. <em>Increasing DNS Security and Stability through a Control
+Plane for Top-level Domain Operators</em>. <strong>IEEE Communications
+Magazine</strong>, 2017, 55.1: 197-203. [<a
+href="https://www.sidnlabs.nl/downloads/WSOrrK9bS2uJVBjcA7769g/2115b7e2ef22f6d587a6eed60217fa6a/sidnlabs-commag.pdf">PDF</a>]</p></li>
+<li><p>Maarten Wullink, Giovane. C. M. Moura , Moritz Müller and
+Cristian Hesselman. <em>ENTRADA: a High-Performance Network Traffic Data
+Streaming Warehouse</em>. In: IEEE/IFIP Network Operations and
+Management Symposium (<strong>NOMS 2016</strong>) – Experience Session.
+Istanbul, Turkey, May 2016. [<a
+href="https://www.sidnlabs.nl/downloads/0u2KIZFoTIyPbRCS8bUGTg/978b3110b300ab816dcb00babcc854b4/sidn-ecrime.pdf">PDF</a>]</p></li>
+<li><p>Giovane. C. M. Moura , Moritz Müller, Maarten Wullink and
+Cristian Hesselman. <em>nDEWS: a New Domains Early Warning System for
+TLDs</em>. In: IEEE/IFIP International Workshop on Analytics for Network
+and Service Management (<strong>AnNet 2016</strong>), co-located with
+IEEE/IFIP Network Operations and Management Symposium (NOMS 2016).
+Istanbul, Turkey, May 2016. [<a
+href="https://www.sidnlabs.nl/downloads/F9eteKnZTjy99IPD9AQf2g/f4072c9cc67fc3f459b2c78795c38294/sidn-annet2016.pdf">PDF</a>]</p></li>
+<li><p>Maarten Wullink, Moritz Müller, Marco Davids, Giovane C. M.
+Moura, and Cristian Hesselman. <em>ENTRADA: Enabling DNS Big Data
+Applications</em>. In: APWG Symposium on Electronic Crime Research
+(<strong>eCRIME 2016</strong>), Toronto, ON, Canada. June 1–3, 2016. [<a
+href="https://www.sidnlabs.nl/downloads/0u2KIZFoTIyPbRCS8bUGTg/978b3110b300ab816dcb00babcc854b4/sidn-ecrime.pdf">PDF</a>]</p></li>
 </ol>
 <p> </p>
 <p> </p>
 <hr />
-<p><span class="footer"><em>Last updated on Jul 20, 2022. </em></span></p>
+<p><span class="footer"><em>Last updated on feb 14, 2025.
+</em></span></p>
 </body>
 </html>
